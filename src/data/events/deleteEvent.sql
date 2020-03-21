@@ -1,3 +1,2 @@
 DELETE  [dbo].[events]
-WHERE   [id] = @id
-  AND   [userId] = @userId;
+WHERE   [id] = @id;

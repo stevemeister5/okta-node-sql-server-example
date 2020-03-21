@@ -1,4 +1,4 @@
-/*
+
 USE master;
 GO
 
@@ -10,7 +10,6 @@ GO
 
 USE calendar;
 GO
-*/
 
 -- Dropping events table...
 DROP TABLE IF EXISTS events;

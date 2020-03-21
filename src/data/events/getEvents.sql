@@ -6,6 +6,5 @@ SELECT  [id]
         , [endDate]
         , [endTime]
 FROM    [dbo].[events]
-WHERE   [userId] = @userId
 ORDER BY
         [startDate], [startTime];
