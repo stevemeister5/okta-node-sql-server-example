@@ -7,17 +7,13 @@ module.exports.register = async server => {
         method: "GET",
         path: "/api/events",
         config: {
-            auth: {
-                strategy: "session",
-                mode: "required"
-            },
             handler: async request => {
                 try {
                     // get the sql client registered as a plugin
                     const db = request.server.plugins.sql.client;
 
                     // get the current authenticated user's id
-                    const userId = request.auth.credentials.profile.id;
+                    const userId = "fdsaf423523";
 
                     // execute the query
                     const res = await db.events.getEvents( userId );
